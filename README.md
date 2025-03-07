@@ -138,13 +138,16 @@ p=drive_link)
   │   ├── reading_notebook.py
   │   ├── transformation_notebook.py
   │   └── creatingviews_notebook.py
-  ├── BlobStorage/
+  ├── DataLakegen2/
   │   ├── bronze/
-  │   │   └── sample_data.csv
-  │   ├── silver/
-  │   │   └── sample_data.csv
-  │   └── gold/
-  │       └── sample_data.csv
+  │   │   └── bronze_container.png
+  │   │   └── Access_Tokens.txt
+  │   ├── Silver/
+  │   │   └── Silver_container.png
+  │   │   └── Access_Tokens.txt
+  │   ├── Gold/
+  │   │   └── Gold_container.png
+  │   │   └── Access_Tokens.txt
   ├── README.md
   └── .gitignore
 ```
