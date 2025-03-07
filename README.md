@@ -107,8 +107,16 @@ p=drive_link)
 
 ## Azure Blob Storage Setup
   - Bronze Layer: Contains raw data files (e.g., CSV, JSON).
+      blob SAS Token : sp=r&st=2025-03-07T18:23:01Z&se=2025-03-22T02:23:01Z&spr=https&sv=2022-11-02&sr=c&sig=sVwvtGgxefVHnpWo9n6BrZXWiQC2%2FtupPR1U9cWVzZw%3D
+      blob SAS URL : https://gsynergyrgstorage.blob.core.windows.net/bronze?sp=r&st=2025-03-07T18:23:01Z&se=2025-03-22T02:23:01Z&spr=https&sv=2022-11-02&sr=c&sig=sVwvtGgxefVHnpWo9n6BrZXWiQC2%2FtupPR1U9cWVzZw%3D
+  
   - Silver Layer: Contains cleaned and standardized data in Delta format.
+      blob SAS Token : sp=r&st=2025-03-07T18:25:57Z&se=2025-03-22T02:25:57Z&spr=https&sv=2022-11-02&sr=c&sig=xjLiMcOuXcgfZWhBUdM4Vw0Q%2BpaCZaUczywBVhhCvlo%3D
+      blob SAS URL : https://gsynergyrgstorage.blob.core.windows.net/silver?sp=r&st=2025-03-07T18:25:57Z&se=2025-03-22T02:25:57Z&spr=https&sv=2022-11-02&sr=c&sig=xjLiMcOuXcgfZWhBUdM4Vw0Q%2BpaCZaUczywBVhhCvlo%3D
+  
   - Gold Layer: Contains refined datasets in Delta format for reporting and analytics.
+      blob SAS Token : sp=r&st=2025-03-07T18:27:28Z&se=2025-03-22T02:27:28Z&spr=https&sv=2022-11-02&sr=c&sig=Huon4vcMU5zB77U6RxMWlb319ylexKX4yQ4lyuqYPGA%3D
+      blob SAS URL : https://gsynergyrgstorage.blob.core.windows.net/gold?sp=r&st=2025-03-07T18:27:28Z&se=2025-03-22T02:27:28Z&spr=https&sv=2022-11-02&sr=c&sig=Huon4vcMU5zB77U6RxMWlb319ylexKX4yQ4lyuqYPGA%3D
 
 ## Delta Lake Integration - 
    Delta Lake is used for:
