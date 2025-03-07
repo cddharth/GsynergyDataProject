@@ -1,0 +1,4 @@
+blob SAS Token : sp=r&st=2025-03-07T18:27:28Z&se=2025-03-22T02:27:28Z&spr=https&sv=2022-11-02&sr=c&sig=Huon4vcMU5zB77U6RxMWlb319ylexKX4yQ4lyuqYPGA%3D
+
+
+blob SAS URL : https://gsynergyrgstorage.blob.core.windows.net/gold?sp=r&st=2025-03-07T18:27:28Z&se=2025-03-22T02:27:28Z&spr=https&sv=2022-11-02&sr=c&sig=Huon4vcMU5zB77U6RxMWlb319ylexKX4yQ4lyuqYPGA%3D
