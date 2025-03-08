@@ -1,0 +1,118 @@
+Table factavgcost_df {
+  fscldt_id integer
+  sku_id integer
+  average_unit_standardcost decimal(10,2)
+  average_unit_landedcost decimal(10,2)
+}
+
+Table facttransactions_df {
+  order_id string
+  line_id string
+  type string
+  dt string
+  pos_site_id string
+  sku_id string
+  fscldt_id string
+  price_substate_id string
+  sales_units string
+  sales_dollars string
+  discount_dollars string
+  original_order_id string
+  original_line_id string
+}
+
+Table hierclnd_df {
+  fscldt_id integer
+  fscldt_label date
+  fsclwk_id integer
+  fsclwk_label string
+  fsclmth_id integer
+  fsclmth_label string
+  fsclqrtr_id integer
+  fsclqrtr_label string
+  fsclyr_id integer
+  fsclyr_label integer
+  ssn_id string
+  ssn_label string
+  ly_fscldt_id integer
+  lly_fscldt_id integer
+  fscldow integer
+  fscldom integer
+  fscldoq integer
+  fscldoy integer
+  fsclwoy integer
+  fsclmoy integer
+  fsclqoy integer
+  date date
+}
+
+Table hierprod_df {
+  sku_id string
+  sku_label string
+  stylclr_id string
+  stylclr_label string
+  styl_id string
+  styl_label string
+  subcat_id integer
+  subcat_label string
+  cat_id integer
+  cat_label string
+  dept_id integer
+  dept_label string
+  issvc integer
+  isasmbly integer
+  isnfs integer
+}
+
+Table hierinvloc_df {
+  loc string
+  loc_label string
+  loctype string
+  loctype_label string
+}
+
+Table hierinvstatus_df {
+  code_id string
+  code_label string
+  bckt_id string
+  bckt_label string
+  ownrshp_id string
+  ownrshp_label string
+}
+
+Table hierpossite_df {
+  site_id string
+  site_label string
+  subchnl_id string
+  subchnl_label string
+  chnl_id string
+  chnl_label string
+}
+
+Table hierpricestate_df {
+  substate_id string
+  substate_label string
+  state_id string
+  state_label string
+}
+
+Table hierrtlloc_df {
+  str string
+  str_label string
+  dstr integer
+  dstr_label string
+  rgn integer
+  rgn_label string
+}
+
+Table hierhldy_df {
+  hldy_id string
+  hldy_label string
+}
+
+Ref: hierpossite_df.site_id > hierrtlloc_df.str
+Ref: factavgcost_df.sku_id > hierprod_df.sku_id
+Ref: facttransactions_df.sku_id > hierprod_df.sku_id
+Ref: facttransactions_df.fscldt_id > hierclnd_df.fscldt_id
+Ref: facttransactions_df.pos_site_id > hierpossite_df.site_id
+Ref: facttransactions_df.price_substate_id > hierpricestate_df.substate_id
